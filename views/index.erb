@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <style>
+            body {
+                background: <%= color %>;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type='text' name='guess' />
+            <input type='submit' value='Guess!' />
+        </form>
+        <p>Guess left: <%= guess_left %></p>
+        <p><%= message %></p>
+        <% if cheat == "true" %>
+            <p>The secret number is: <%= secret %></p>
+        <% end %>
+    </body>
+</html>

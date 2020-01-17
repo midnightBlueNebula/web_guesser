@@ -11,7 +11,7 @@ def check_guess(guess,secret,color)
             return "Too high :("
         else
             $color = "pink"
-            return "You're this close..."
+            return "High. You're this close..."
         end
     else
         if guess < secret - 9
@@ -19,7 +19,7 @@ def check_guess(guess,secret,color)
             return "Too low :("
         else
             $color = "pink"
-            return "You're this close..."
+            return "Low. You're this close..."
         end
     end
 end
